@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <style>
+      .container {
+        width: 1000px;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+
+      .container-colum2,
+      .container-colum1 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        font-size: 40px;
+        font-weight: 800;
+        font-family: "Oswald", sans-serif;
+        color: #eb6796;
+      }
+      i {
+        margin-right: 10px;
+      }
+      input {
+        border: 0;
+        outline: 0;
+      }
+      button {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding: 10px 30px;
+        background-color: #eb6796;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .container-colum1 div {
+        border-bottom: 1px solid black;
+        margin-bottom: 50px;
+      }
+      .container-colum1 > form > i {
+        font-size: 30px;
+        margin-right: 20px;
+      }
+      .container-colum2 > a:nth-child(2) {
+        margin-bottom: 15px;
+      }
+    </style>
+    <div class="container">
+      <div class="container-colum1">
+        <form action="">
+          <h2>Sign up</h2>
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <input type="email" placeholder="User Name" />
+          </div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="" id="" placeholder="Your Email" />
+          </div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="" id="" placeholder="Password" />
+          </div>
+          <button>Register</button>
+        </form>
+      </div>
+      <div class="container-colum2">
+        <img
+          src="https://payload.cargocollective.com/1/11/363217/14289371/femme_bureau_insta_3_1000.jpg"
+          alt=""
+          width="500px"
+          height="auto"
+        />
+        <a href="login.html">I am already member</a>
+        <a href="index.html">Quay về trang chủ</a>
+      </div>
+    </div>
+  </body>
+</html>

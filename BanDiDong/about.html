@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #254059 ;
+            color: white;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            z-index: 1000;
+            background-color: white;
+            font-family: Poppins;
+        }
+
+        .header>div:first-child {
+            font-size: 35px;
+            padding: 15px 10px;
+            font-weight: 800;
+            font-family: Poppins;
+            color: black;
+        }
+
+        .header>div:first-child>a {
+            color: black;
+        }
+
+        .header>div:nth-child(2) li {
+            display: inline-block;
+            padding: 0px 20px;
+            font-size: 23px;
+        }
+
+        .header>div:nth-child(2) li>a {
+            color: black;
+        }
+
+        .header>div:last-child li {
+            display: inline-block;
+            padding: 0px 10px;
+            font-size: 23px;
+        }
+
+        .nav {
+            display: flex;
+            height: 300px;
+            background-color: #254059;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .nav>h3 {
+            font-size: 40px;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 900;
+        }
+
+        .nav a {
+            color: #eb6796;
+        }
+
+        .nav>p {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .content>div {
+            width: 49%;
+            margin-bottom: 30px;
+            margin-right: 7px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text>h3 {
+            font-size: 30px;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 900;
+        }
+    </style>
+
+    <div>
+        <div class="header">
+            <div>
+                <a href="">Phone.</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="signup.html"><i class="fas fa-user-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav">
+            <h3>ABOUT US</h3>
+            <p><a href="">home</a> / about</p>
+        </div>
+
+        <div class="content">
+            <div>
+                <img src="img/abou1.jpg" alt="" width="480px" height="400px">
+            </div>
+            <div class="text">
+                <h3>WHY CHOOSE US?</h3>
+                <p>Chúng tôi tự hào mang đến những chiếc điện thoại xuất sắc nhất và dịch vụ chuyên nghiệp. Với đa dạng mẫu mã, chất lượng hàng đầu, chúng tôi cam kết làm hài lòng mọi nhu cầu của bạn. Mua sắm trực tuyến dễ dàng và nhận ngay niềm vui tặng quà cho người thân yêu.</p>
+                <button>Our Shop</button>
+            </div>
+            <div class="text">
+                <h3>WHAT WE PROVIDE?</h3>
+                <p>Chúng tôi cung cấp một loạt các dịch vụ hoa đa dạng để đáp ứng mọi nhu cầu của bạn. Từ việc thiết kế
+                    bó hoa tùy chỉnh, đến giao hàng nhanh chóng và đúng hẹn, chúng tôi cam kết mang đến sự hài lòng
+                    tuyệt đối. Bên cạnh đó, chúng tôi còn cung cấp các sản phẩm phụ trợ như giỏ quà tặng và thiệp chúc
+                    mừng, giúp bạn tạo nên những trải nghiệm đáng nhớ và gửi đi thông điệp yêu thương đến những người
+                    bạn quan tâm.</p>
+                <button>Message Us</button>
+            </div>
+            <div>
+                <img src="img/about2.jpg" alt="" width="480px" height="400px">
+            </div>
+        </div>
+</body>
+
+</html>

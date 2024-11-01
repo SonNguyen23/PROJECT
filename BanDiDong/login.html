@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <style>
+        .container {
+            width: 1000px;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .container-colum1>a {
+            margin-bottom: 20px;
+        }
+
+        .container-colum1,
+        .container-colum2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 800;
+            font-family: 'Oswald', sans-serif;
+            color: #eb6796;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+
+        input {
+            border: 0;
+            outline: 0;
+        }
+
+        button {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            padding: 10px 30px;
+            background-color: #eb6796;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container-colum2 div {
+            border-bottom: 1px solid black;
+            margin-bottom: 50px;
+        }
+
+        .container-colum2>form>i {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+    </style>
+    <div class="container">
+        <div class="container-colum1">
+            <img src="http://esuhai.vn/upload/fck_new/image/4Nursery/KY%20NANG/2020/T11/khongthatnghiep/chao-dao-nguong-cua-truong-thanh-10@2x.jpg"
+                alt="" width="420px" height="auto">
+            <a href="signup.html">Create an account</a>
+            <a href="index.html">Quay về trang chủ</a>
+        </div>
+        <div class="container-colum2">
+            <form action="">
+                <h2>Sign in</h2>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="" id="" placeholder="Password">
+                </div>
+                <input type="checkbox" name="" id="">
+                <label for="">Remember me</label><br>
+                <button>Log in</button>
+                <p>Or login with</p>
+                <i style="color:#314a77 " class="fa-brands fa-square-facebook"></i>
+                <i style="color:#1985c3 " class="fa-brands fa-square-twitter"></i>
+                <i style="color:#c31e2a " class="fa-brands fa-square-google-plus"></i>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

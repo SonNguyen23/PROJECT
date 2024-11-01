@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body onload="getsoluongsp()">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .header {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            z-index: 1000;
+            background-color: white;
+            font-family: Poppins;
+        }
+
+        .header>div:first-child {
+            font-size: 35px;
+            padding: 15px 10px;
+            font-weight: 800;
+            font-family: Poppins;
+            color: black;
+        }
+
+        .header>div:first-child>a {
+            color: black;
+        }
+
+        .header>div:nth-child(2) li {
+            display: inline-block;
+            padding: 0px 20px;
+            font-size: 23px;
+        }
+
+        .header>div:nth-child(2) li>a {
+            color: black;
+        }
+
+        .header>div:last-child li {
+            display: inline-block;
+            padding: 0px 10px;
+            font-size: 23px;
+        }
+
+        .container {
+            padding-top: 120px;
+            display: flex;
+            justify-content: center;
+            background-color: #deddde;
+        }
+
+        .container>div {
+            width: 950px;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            padding: 40px;
+            border-radius: 30px;
+            margin-bottom: 50px;
+        }
+
+        .container div>img {
+            border-radius: 20px;
+            margin-right: 91px;
+        }
+
+        .container div:nth-child(2)>h1 {
+            font-size: 45px;
+            font-family: Kumbh Sans;
+            font-weight: 700;
+        }
+
+        .container div:nth-child(2)>p {
+            color: #68707d;
+            font-family: Kumbh Sans;
+            font-size: 15px;
+            line-height: 25.5px;
+            margin-bottom: 30px;
+        }
+
+        .container div:nth-child(2)>div:nth-child(3) {
+            margin-bottom: 25px;
+        }
+
+        .container div:nth-child(2) span:nth-child(1) {
+            color: #1d2025;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .container div:nth-child(2) span:nth-child(2) {
+            background-color: #e7f2ec;
+            border-radius: 6px;
+            color: #49a697;
+            font-weight: 700;
+            padding: 4px 10px;
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        .container div:nth-child(2)>div:nth-child(3) {
+            position: relative;
+        }
+
+        .container div:nth-child(2) del {
+            position: absolute;
+            top: 40%;
+            right: 0;
+            color: #b6bcc8;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .container div:nth-child(2) button {
+            width: 267px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            background-color: #138645;
+            border-radius: 10px;
+            box-shadow: #138645 0px 10px 30px -10px;
+            color: #fff;
+            font-family: Kumbh Sans;
+            font-weight: 800;
+            justify-content: center;
+            padding: 18px;
+            text-align: center;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+        }
+
+        .footer h3 {
+            font-size: 21px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+        }
+
+        .footer ul {
+            padding-left: 0;
+        }
+
+        .footer ul>li {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer ul i {
+            padding-right: 10px;
+            color: #f09ba9;
+        }
+
+        .footer ul a {
+            color: white;
+
+        }
+    </style>
+    <div class="header">
+        <div>
+            Phone.
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span id="slsp"></span>
+                </li>
+                <li><a href="signup.html"><i class="fas fa-user-plus"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <div>
+                <img src="img/iphone12Pro.webp" alt="" width="330px" height="370px">
+            </div>
+            <div>
+                <h1>Iphone 12 Pro</h1>
+                <p>
+                    iPhone 12 Pro, sản phẩm xuất sắc từ Apple, đem đến trải nghiệm đỉnh cao của công nghệ di động. Với màn hình Super Retina XDR 6.1 inch, iPhone 12 Pro cung cấp hình ảnh sắc nét, màu sắc chân thực và độ sáng cao. Hệ thống camera chất lượng cao, bao gồm ba ống kính 12MP, giúp người dùng chụp ảnh và quay video chất lượng chuyên nghiệp. Sức mạnh của chip A14 Bionic cùng với khả năng kết nối 5G mang lại hiệu suất ổn định và tốc độ truyền tải dữ liệu nhanh chóng. Thiết kế sang trọng với lưng kính Ceramic Shield chống trầy và khung thép không gỉ, iPhone 12 Pro là biểu tượng của sự đẳng cấp và thẩm mỹ trong thế giới smartphone.</p>
+                <div>
+                    <span>12.600.000VND</span>
+                    <span>10%</span>
+                    <del>13.000.000VND</del>
+                    <input type="hidden" name="price" value="12600000">
+                </div>
+                <div>
+                    <button id="muaNgayBtn">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="product.html">product</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="userProfilePage.html">user</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>EXTRA LINKS</h3>
+            <ul>
+                <li><a class="color-white" href="login.html">login</a></li>
+                <li><a class="color-white" href="signup.html">register</a></li>
+                <li><a class="color-white" href="cart.html">cart</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>CONTACT INFO</h3>
+            <ul>
+                <li><i class="fa-solid fa-phone"></i><a href="">+123-456-7890</a></li>
+                <li><i class="fa-solid fa-phone"></i><a href="">+111-222-3333</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="">Saikhanas@gmal.com</a></li>
+                <li><i class="fa-solid fa-location-dot"></i><a href="">mumbai, india - 400104</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>FOLLOW US</h3>
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i><a href="">Facebook</a></li>
+                <li><i class="fa-brands fa-instagram"></i></i><a href="">Instargram</a></li>
+                <li><i class="fa-brands fa-twitter"></i></i></i><a href="">Twiter</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="thuvien.js"></script>
+</body>
+
+</html>

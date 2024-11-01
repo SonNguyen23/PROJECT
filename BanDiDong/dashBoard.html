@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .div_body {
+        display: flex;
+        flex-direction: row;
+        padding-left: 5px;
+      }
+      .left_div {
+        background-color: #1d4367;
+        color: #dbebff;
+        font-size: 35px;
+        width: 30%;
+        height: 800px;
+        margin-right: 50px;
+      }
+      .left_div > div:nth-child(1) {
+        color: red;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: 500;
+        background-color: #365378;
+        padding-bottom: 50px;
+        padding-top: 25px;
+      }
+      .title_left_div {
+        text-decoration: none;
+        color: #dbebff;
+        display: block;
+        background-color: #365378;
+        padding: 20px;
+      }
+      .rigt_div {
+        width: 60%;
+      }
+    </style>
+    <div class="div_body">
+      <div class="left_div">
+        <div>Dash<span style="color: yellow">Board</span></div>
+        <a class="title_left_div" href="">Quản lý sản phẩm</a>
+      </div>
+      <div class="right_div">
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
